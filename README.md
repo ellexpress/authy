@@ -1,4 +1,4 @@
-# 🔒 padlock-auth
+# 🔒 authy
 
 Middleware & Services to implement token creation & validation for express app.
 
@@ -6,7 +6,7 @@ Middleware & Services to implement token creation & validation for express app.
 
 1. Install the package:
 ```shell
-npm install padlock-auth
+npm install @ellexpress/authy
 ```
 
 2. create the `.env` file in the project root:

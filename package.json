@@ -1,9 +1,9 @@
 {
-  "name": "padlock-auth",
-  "version": "2.1.0",
+  "name": "@ellexpress/authy",
+  "version": "0.0.1",
   "description": "Middleware & Services to implement token creation & validation for express app.",
   "main": "dist/index.umd.cjs",
-  "types": "types/arrowy-env.d.ts",
+  "types": "types/ellenode-envy.d.ts",
   "type": "module",
   "scripts": {
     "build:ts": "tsc --project ./tsconfig.json",
@@ -22,16 +22,18 @@
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
-    "@types/jsonwebtoken": "9.0.5"
+    "@types/jsonwebtoken": "9.0.5",
+    "typescript": "^4.9.5"
   },
   "dependencies": {
-    "arrowy-env": "^2.0.0",
+    "@ellenode/envy": "^0.0.1",
     "jsonwebtoken": "^9.0.2",
     "rollup": "^4.13.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CrisGuzmanS/padlock-auth"
+    "url": "git+https://github.com/ellexpress/authy.git"
   }
 }

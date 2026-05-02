@@ -1,5 +1,5 @@
 import { Token } from "../Services/Token.js";
-import { env } from 'arrowy-env';
+import { env } from '@ellenode/envy';
 
 /**
  * Verifies the token provided in the header

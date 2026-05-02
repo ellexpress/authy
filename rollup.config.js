@@ -1,20 +1,28 @@
 import commonjs from '@rollup/plugin-commonjs';
+import json from '@rollup/plugin-json';
 import resolve from '@rollup/plugin-node-resolve';
 
 export default {
   input: 'src/index.js',
-  output: {
-    file: 'dist/index.umd.cjs',
-    format: 'umd',
-    name: 'PadlockAuth', // Nombre global del módulo UMD
-    globals: {
-      'arrowy-env': 'ArrowyEnv',
-      'jsonwebtoken': 'jwt'
+  output: [
+    {
+      file: 'dist/index.cjs',
+      format: 'cjs'
+    },
+    {
+      file: 'dist/index.esm.js',
+      format: 'esm'
     }
-  },
-  plugins: [
-    resolve(),
-    commonjs()
   ],
-  external: ['arrowy-env', 'jsonwebtoken']
+  plugins: [
+    json(),
+    commonjs(),
+    resolve(),
+  ],
+  external: [
+    '@ellenode/envy', 
+    'jsonwebtoken', 
+    'dotenv',
+    'path'
+  ]
 };

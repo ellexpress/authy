@@ -1,4 +1,4 @@
-import { env } from 'arrowy-env';
+import { env } from '@ellenode/envy';
 import jwt from 'jsonwebtoken';
 
 export class Token {
