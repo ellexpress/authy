@@ -2,8 +2,16 @@
   "name": "@ellexpress/authy",
   "version": "0.0.3",
   "description": "Middleware & Services to implement token creation & validation for express app.",
-  "main": "dist/index.umd.cjs",
-  "types": "types/ellenode-envy.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "type": "module",
   "scripts": {
     "build:ts": "tsc --project ./tsconfig.json",
@@ -18,6 +26,10 @@
     "jwt",
     "jsonwebtoken"
   ],
+  "files": [
+    "dist",
+    "types"
+  ],
   "author": "cristian.guzman.contacto@gmail.com",
   "license": "MIT",
   "devDependencies": {
@@ -25,7 +37,7 @@
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@types/jsonwebtoken": "9.0.5",
-    "typescript": "^4.9.5"
+    "typescript": "^6.0.3"
   },
   "dependencies": {
     "@ellenode/envy": "^0.0.1",
