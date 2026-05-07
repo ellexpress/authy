@@ -4,8 +4,8 @@
     "outDir": "./dist",
 
     "target": "ES2022",
-    "module": "ESNext",
-    "moduleResolution": "bundler",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
 
     "declaration": true,
 
@@ -23,7 +23,7 @@
     "typeRoots": [
       "./types",
       "./node_modules/@types"
-    ]
+    ],
   },
 
   "include": [
