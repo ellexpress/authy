@@ -1,6 +1,6 @@
 {
   "name": "@ellexpress/authy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Middleware & Services to implement token creation & validation for express app.",
   "main": "dist/index.umd.cjs",
   "types": "types/ellenode-envy.d.ts",
